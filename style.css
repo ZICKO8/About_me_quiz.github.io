@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body {
+    background-image: url(./bg.jpg);
+
+}
+
+.quiz-wrapper {
+    height: 50rem;
+    max-width: 70rem;
+    min-width: 20rem;
+    margin: 3rem auto;
+    background-color: white;
+    color: black;
+    padding: 3rem;
+    border-radius: 1.5rem;
+
+}
+
+.intro {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.quiz-wrapper .question {
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 5rem;
+    background-color: #387d71;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    text-align: start;
+    font-size: 2.0rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.quiz-wrapper .options {
+    margin-top: 3rem;
+
+}
+.quiz-wrapper .options ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.quiz-wrapper .options ul li {
+    font-size: 1.5rem;
+    width: 30rem;
+    height: 5rem;
+    background-color: #7a8798;
+    color: white;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0 #525c69;
+    border: none;
+}
+
+.quiz-wrapper .options ul li.correct {
+    background-color: #18ca18;
+    box-shadow: 0 0.3rem 0 #268a1a;
+}
+
+.quiz-wrapper .options ul li.incorrect {
+    background-color: #e22424;
+    box-shadow: 0 0.3rem 0 #a51d10;
+}
+
+.quiz-wrapper .options ul li:active {
+    box-shadow: 0 0 0 #525c69;
+}
+
+.scorediv {
+    margin: 2rem;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.span {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.next {
+    height: 5rem;
+    width: 40%;
+    color: white;
+    background-color: #109696;
+    font-size: 2rem;
+    font-family: 500;
+    text-align: center;
+    padding-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin: auto;
+    box-shadow: 0 0.3rem 0 #075a5a;
+    cursor: pointer;
+    outline: none;
+}
+
+.next:active {
+    box-shadow: 0 0 0 transparent;
+}
+
+footer p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin: 3rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .quiz-wrapper .options ul {
+        justify-content: center;
+    }
+    .quiz-wrapper {
+        margin: 2rem;
+        height: auto;
+    }
+}

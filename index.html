@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_Quiz_Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-wrapper">
+        <div class="intro">
+        <h1>Responsive Quiz</h1>
+            <p>This is a quick
+             responsive quiz for start.ng
+              fron-end task 4</p>
+            </div>
+            <div class="question" id="questionBox">
+                
+            </div>
+            <div class="options">
+                <ul id="ul">
+                    <li id="op1" onclick="button(this)"></li>
+                    <li id="op2" onclick="button(this)"></li>
+                    <li id="op3" onclick="button(this)"></li>
+                    <li id="op4" onclick="button(this)"></li>
+                </ul>
+            </div>
+            <div class="scorediv">
+            <div class="score">Score: <span class="span" id="scoreCard">0</span></div>
+            </div>
+            <div class="nextscore">
+            <div class="next" onclick="next()" id="button">Next</div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy ZICKO 2020</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
